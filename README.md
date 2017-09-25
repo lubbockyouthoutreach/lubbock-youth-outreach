@@ -1,19 +1,24 @@
 # Lubbock Youth Outreach Website
 
-- Webiste Functionality
-    - Application/contact form
-    - Donations?
+- Design
+    - Pages
+        - Home
+        - About
+        - Contact
+            - Static for now
+        - Groups/Members
+    - Content
+        - Donate
+            - Would have to be a link to some external site (i.e. Patreon)
+    - Theme
+        - Colors?
+    - Functionality
+        - Language Translations
+            - Automatic?
 - Implementation
     - Static only website
         - GitHub web hosting
     - No need to support IE 9
-- Design
-    - Home
-    - About
-    - Contact
-    - Groups/Members
-- Language Translations
-    - Automatic?
 - User personas
     - Parents
     - Teachers/orphanage organizers
