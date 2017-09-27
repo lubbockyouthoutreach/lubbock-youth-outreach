@@ -5,17 +5,17 @@
   "repository": "https://github.com/lubbockyouthoutreach/lubbock-youth-outreach.git",
   "author": "",
   "license": "MIT",
-  "babel": {
-    "presets": [
-      [
-        "env",
-        {
-          "targets": {
-            "node": "8.5"
-          }
-        }
-      ]
-    ]
+  "scripts": {
+    "prod": "webpack --env=prod",
+    "dev": "webpack-dev-server --env=dev"
+  },
+  "dependencies": {
+    "grommet": "^1.7.0",
+    "loglevel": "^1.5.0",
+    "prop-types": "^15.6.0",
+    "react": "15.6.2",
+    "react-dom": "15.6.2",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -34,13 +34,5 @@
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2",
     "webpack-merge": "^4.1.0"
-  },
-  "dependencies": {
-    "grommet": "^1.7.0",
-    "loglevel": "^1.5.0",
-    "prop-types": "^15.6.0",
-    "react": "15.6.2",
-    "react-dom": "15.6.2",
-    "react-router-dom": "^4.2.2"
   }
 }
