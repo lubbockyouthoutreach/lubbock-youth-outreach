@@ -1,0 +1,7 @@
+# Dependencies
+node_modules/
+
+# Builds/Bundles
+public/*.map
+public/*.json
+public/*.js
