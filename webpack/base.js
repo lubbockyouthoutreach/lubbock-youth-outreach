@@ -45,7 +45,7 @@ const base = {
             loader: 'sass-loader',
             options: {
               outputStyle: 'compressed',
-              includePaths: nodePath,
+              includePaths: [nodePath],
             },
           },
         ],
