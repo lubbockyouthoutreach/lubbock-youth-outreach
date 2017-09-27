@@ -1,1 +1,3 @@
-@import 'grommet/scss/vanilla/index.scss';
+@import './custom';
+@import 'grommet/scss/grommet-core/index';
+@import 'grommet/scss/vanilla/objects.button-vanilla';
