@@ -1,0 +1,29 @@
+{
+  "name": "lubbock-youth-outreach",
+  "version": "0.0.0",
+  "main": "src/index.jsx",
+  "repository": "https://github.com/lubbockyouthoutreach/lubbock-youth-outreach.git",
+  "author": "",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "8.5"
+          }
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2",
+    "webpack-merge": "^4.1.0"
+  }
+}
