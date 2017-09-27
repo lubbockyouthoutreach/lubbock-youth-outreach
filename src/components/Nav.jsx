@@ -4,19 +4,37 @@ import { withRouter } from 'react-router-dom';
 
 import Header from 'grommet/components/Header';
 import Title from 'grommet/components/Title';
+import Box from 'grommet/components/Box';
 import Menu from 'grommet/components/Menu';
 import MenuIcon from 'grommet/components/icons/base/Menu';
 import Anchor from 'grommet/components/Anchor';
+import Responsive from 'grommet/utils/Responsive';
 
 class Nav extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      small: false,
+    };
 
     /*
       navigate needs to be bound to the context of Nav to access the router,
       since it is being called from other elements.
     */
+    this.onResponsive = this.onResponsive.bind(this);
     this.navigate = this.navigate.bind(this);
+  }
+
+  componentDidMount() {
+    this.responsive = Responsive.start(this.onResponsive);
+  }
+
+  componentWillUnmount() {
+    this.responsive.stop();
+  }
+
+  onResponsive(small) {
+    this.setState({ small });
   }
 
   /*
@@ -37,23 +55,42 @@ class Nav extends React.Component {
     return (
       <div>
         <Header
-          fixed
           flex
           direction='row'
           responsive={false}
-          pad={{ horizontal: 'small' }}
+          pad={{ horizontal: 'medium' }}
         >
           <Title>
             LYO
           </Title>
-          <Menu
-            icon={<MenuIcon />}
-            dropAlign={{ left: 'left', top: 'top' }}
+          <Box
+            flex
+            justify='end'
+            direction='row'
+            responsive={false}
+            pad='small'
           >
-            <Anchor onClick={() => this.navigate('/')}>
-              Home
-            </Anchor>
-          </Menu>
+            <Menu
+              responsive
+              inline={!this.state.small}
+              direction='row'
+              icon={<MenuIcon />}
+              dropAlign={{ right: 'right', top: 'top' }}
+            >
+              <Anchor onClick={() => this.navigate('/')}>
+                Home
+              </Anchor>
+              <Anchor>
+                Joining
+              </Anchor>
+              <Anchor>
+                Forms
+              </Anchor>
+              <Anchor>
+                About
+              </Anchor>
+            </Menu>
+          </Box>
         </Header>
       </div>
     );
