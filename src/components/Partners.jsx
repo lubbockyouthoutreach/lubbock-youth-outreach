@@ -5,14 +5,12 @@ import Box from 'grommet/components/Box';
 
 function Partners() {
   return (
-    <div>
-      <Box align='start' margin='small' pad='large'>
-        Our Partners
-        <Paragraph>
-          Stuff for partners
-        </Paragraph>
-      </Box>
-    </div>
+    <Box align='start' margin='small' pad='large'>
+      Our Partners
+      <Paragraph>
+        Stuff for partners
+      </Paragraph>
+    </Box>
   );
 }
 
