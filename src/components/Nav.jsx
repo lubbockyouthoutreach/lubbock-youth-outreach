@@ -77,7 +77,7 @@ class Nav extends React.Component {
               icon={<MenuIcon />}
               dropAlign={{ right: 'right', top: 'top' }}
             >
-              <Anchor onClick={() => this.navigate('/')}>
+              <Anchor onClick={() => this.navigate('/home')}>
                 Home
               </Anchor>
               <Anchor onClick={() => this.navigate('/partners')}>

@@ -21,17 +21,17 @@ const App = () => (
       <Box full>
         <Nav />
 
-        {/* Load the events page by default */}
+        {/* Load the home page by default */}
         <Route
           exact
           path='/'
           render={() => (
-            <Redirect to='/' />
+            <Redirect to='/home' />
           )}
         />
 
         {/* Set the children of the primary component */}
-        <Route path='/' component={Home} />
+        <Route path='/home' component={Home} />
         <Route path='/partners' component={Partners} />
         <Route path='/join' component={Joining} />
         <Route path='/forms' component={Forms} />
