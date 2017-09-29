@@ -80,14 +80,20 @@ class Nav extends React.Component {
               <Anchor onClick={() => this.navigate('/')}>
                 Home
               </Anchor>
-              <Anchor>
+              <Anchor onClick={() => this.navigate('/partners')}>
+                Partners
+              </Anchor>
+              <Anchor onClick={() => this.navigate('/join')}>
                 Joining
               </Anchor>
-              <Anchor>
+              <Anchor onClick={() => this.navigate('/forms')}>
                 Forms
               </Anchor>
-              <Anchor>
-                About
+              <Anchor onClick={() => this.navigate('/parents')}>
+                Parents
+              </Anchor>
+              <Anchor onClick={() => this.navigate('/team')}>
+                Team
               </Anchor>
             </Menu>
           </Box>
