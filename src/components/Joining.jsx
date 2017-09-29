@@ -3,15 +3,15 @@ import React from 'react';
 import Paragraph from 'grommet/components/Paragraph';
 import Box from 'grommet/components/Box';
 
-function Home() {
+function Joining() {
   return (
     <Box align='start' margin='small' pad='large'>
-      Home
+      How to Join
       <Paragraph>
-        This is the home page.
+        Joining is simple, do zyx and say it six times fast.
       </Paragraph>
     </Box>
   );
 }
 
-export default Home;
+export default Joining;

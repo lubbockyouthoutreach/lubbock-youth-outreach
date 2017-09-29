@@ -3,15 +3,15 @@ import React from 'react';
 import Paragraph from 'grommet/components/Paragraph';
 import Box from 'grommet/components/Box';
 
-function Home() {
+function Partners() {
   return (
     <Box align='start' margin='small' pad='large'>
-      Home
+      Our Partners
       <Paragraph>
-        This is the home page.
+        Stuff for partners
       </Paragraph>
     </Box>
   );
 }
 
-export default Home;
+export default Partners;

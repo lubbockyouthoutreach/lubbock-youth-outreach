@@ -3,15 +3,15 @@ import React from 'react';
 import Paragraph from 'grommet/components/Paragraph';
 import Box from 'grommet/components/Box';
 
-function Home() {
+function Forms() {
   return (
     <Box align='start' margin='small' pad='large'>
-      Home
+      Forms
       <Paragraph>
-        This is the home page.
+        Fill out the following required forms.
       </Paragraph>
     </Box>
   );
 }
 
-export default Home;
+export default Forms;
