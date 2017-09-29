@@ -1,13 +1,17 @@
 import React from 'react';
 
 import Paragraph from 'grommet/components/Paragraph';
+import Box from 'grommet/components/Box';
 
 function Team() {
   return (
     <div>
-      <Paragraph align='center'>
+      <Box align='start' margin='small' pad='large'>
         Our Team
-      </Paragraph>
+        <Paragraph>
+          Best team ever
+        </Paragraph>
+      </Box>
     </div>
   );
 }
