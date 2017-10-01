@@ -89,7 +89,7 @@ class Nav extends React.Component {
               <Anchor onClick={() => this.navigate('/about')}>
                 About LYO
               </Anchor>
-              <Anchor onClick={() => this.navigate('/getinvolved')}>
+              <Anchor onClick={() => this.navigate('/get-involved')}>
                 Get Involved
               </Anchor>
               <Anchor onClick={() => this.navigate('/parents')}>
