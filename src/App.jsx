@@ -19,12 +19,12 @@ const App = () => (
         {/* Load the header */}
         <Nav />
 
-        {/* Load the events page by default */}
+        {/* Load the home page by default */}
         <Route
           exact
           path='/'
           render={() => (
-            <Redirect to='/' />
+            <Redirect to='/home' />
           )}
         />
 
