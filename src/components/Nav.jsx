@@ -53,22 +53,28 @@ class Nav extends React.Component {
 
   render() {
     return (
-      <div>
-        <Header
+      <Header
+        flex
+        direction='row'
+        responsive={false}
+        pad='small'
+      >
+        <Box
           flex
-          direction='row'
+          align='center'
+          direction='column'
           responsive={false}
-          pad={{ horizontal: 'medium' }}
+          pad='none'
         >
           <Title>
-            LYO
+            Lubbock Youth Outreach
           </Title>
           <Box
             flex
-            justify='end'
+            align='center'
             direction='row'
             responsive={false}
-            pad='small'
+            pad='none'
           >
             <Menu
               responsive
@@ -80,25 +86,19 @@ class Nav extends React.Component {
               <Anchor onClick={() => this.navigate('/home')}>
                 Home
               </Anchor>
-              <Anchor onClick={() => this.navigate('/partners')}>
-                Partners
+              <Anchor onClick={() => this.navigate('/about')}>
+                About LYO
               </Anchor>
-              <Anchor onClick={() => this.navigate('/join')}>
-                Joining
-              </Anchor>
-              <Anchor onClick={() => this.navigate('/forms')}>
-                Forms
+              <Anchor onClick={() => this.navigate('/getinvolved')}>
+                Get Involved
               </Anchor>
               <Anchor onClick={() => this.navigate('/parents')}>
                 Parents
               </Anchor>
-              <Anchor onClick={() => this.navigate('/team')}>
-                Team
-              </Anchor>
             </Menu>
           </Box>
-        </Header>
-      </div>
+        </Box>
+      </Header>
     );
   }
 }
