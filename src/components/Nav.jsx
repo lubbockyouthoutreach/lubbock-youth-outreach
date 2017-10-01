@@ -61,7 +61,7 @@ class Nav extends React.Component {
           pad={{ horizontal: 'medium' }}
         >
           <Title>
-            LYO
+            Lubbock Youth Outreach
           </Title>
           <Box
             flex

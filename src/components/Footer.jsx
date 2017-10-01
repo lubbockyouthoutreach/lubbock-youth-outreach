@@ -44,9 +44,7 @@ class Foot extends React.Component {
         margin='small'
         pad='medium'
       >
-        <Footer
-          primary='true'
-        >
+        <Footer>
           Home stuff
           <Box
             flex
