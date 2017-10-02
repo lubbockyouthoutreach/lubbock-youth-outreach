@@ -32,6 +32,7 @@ const dev = webpackMerge(base, {
   plugins: [
     new webpack.DefinePlugin({
       ENV: JSON.stringify('dev'),
+      PAGES_FIX: JSON.stringify(''),
     }),
   ],
 });

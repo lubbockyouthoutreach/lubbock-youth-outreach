@@ -23,6 +23,7 @@ const prod = webpackMerge(base, {
     // Resolve global constant ENV to 'prod' during build
     new webpack.DefinePlugin({
       ENV: JSON.stringify('prod'),
+      PAGES_FIX: JSON.stringify('/lubbock-youth-outreach'),
     }),
   ],
 });
