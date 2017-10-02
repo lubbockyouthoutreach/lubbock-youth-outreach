@@ -5,3 +5,4 @@ node_modules/
 public/*.map
 public/*.json
 public/*.js
+public/*.jpg

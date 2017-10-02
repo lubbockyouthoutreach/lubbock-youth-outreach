@@ -22,27 +22,53 @@
 
 Hot reloading is enabled, so changes that you make should be added automatically.
 
-## Notes
+## Design
 
-- Design
-    - Pages
-        - Home
-        - About
-        - Contact
-            - Static for now
-        - Groups/Members
-    - Content
-        - Donate
-            - Would have to be a link to some external site (i.e. Patreon)
-    - Theme
-        - Colors?
-    - Functionality
-        - Language Translations
-            - Automatic?
-- Implementation
-    - Static only website
-        - GitHub web hosting
-    - No need to support IE 9
+- Layout
+    - Home
+        - TTU image with link to TTU website
+        - Mission statement
+        - Image carousel with pictures of volunteers working
+        - Events/Announcements
+    - About
+        - Who We Are
+        - Contact Us
+        - Partners
+            - Image
+            - Name
+            - Description
+            - Link
+        - Team
+            - Image carousel with group pictures
+            - Listing of officers with title and name
+    - Get Involved
+        - Joining information
+            - instructions
+            - TTU image
+        - Forms
+            - Download button
+            - Description
+    - Parents
+        - Info
+        - Image
+        - Contact information
+        - Code of conduct
+    - Header
+        - Title
+        - Tab links
+    - Footer
+        - Location
+        - Contact info
+        - Social media links
+- Colors
+    - Use example provided by Neel
+    - Mostly TTU colors
+    - Background off-white, if possible
+
+## Implementation
+- Static only website
+    - GitHub web hosting
+- No need to support IE 9
 - User personas
     - Parents
     - Teachers/orphanage organizers
