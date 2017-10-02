@@ -1,15 +1,15 @@
 import React from 'react';
 
-import Paragraph from 'grommet/components/Paragraph';
 import Box from 'grommet/components/Box';
+
+import Joining from './Joining.jsx';
+import Forms from './Forms.jsx';
 
 function GetInvolved() {
   return (
-    <Box align='start' margin='small' pad='large'>
-      Get Involved
-      <Paragraph>
-        Stuff about getting involved.
-      </Paragraph>
+    <Box>
+      <Joining />
+      <Forms />
     </Box>
   );
 }

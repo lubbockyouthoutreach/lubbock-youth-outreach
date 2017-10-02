@@ -20,7 +20,7 @@ function Joining() {
         direction='column'
         responsive={false}
       >
-        <Heading tag='h2'>
+        <Heading tag='h3'>
           How to get involved
         </Heading>
         <Paragraph>
