@@ -14,7 +14,7 @@ class Form extends React.Component {
   }
 
   download() {
-    window.open(this.props.file);
+    window.open(`${PAGES_FIX}${this.props.file}`);
   }
 
   render() {

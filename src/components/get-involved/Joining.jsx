@@ -31,7 +31,7 @@ function Joining() {
         width='100%'
         height='100%'
         size='medium'
-        src={`${GivingHandsPavillion}`}
+        src={`${PAGES_FIX}${GivingHandsPavillion}`}
       />
     </Box>
   );
