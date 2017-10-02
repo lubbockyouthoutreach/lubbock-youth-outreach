@@ -9,7 +9,7 @@ import WBITexasTechSeal from './wbi-texas-tech-seal.jpg';
 function Home() {
   return (
     <Box align='start' margin='small' pad='large'>
-      <Image fit='cover' src={WBITexasTechSeal} />
+      <Image fit='cover' src={`${PAGES_FIX}${WBITexasTechSeal}`} />
       Home
       <Paragraph>
         This is the home page.
